@@ -6,7 +6,7 @@ const Products = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/products')
+        axios.get('https://cloudserverproject.azurewebsites.net/products')
             .then(response => {
                 setProducts(response.data);
             })
